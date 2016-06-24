@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efb87398-9a70-4d2e-bbfc-4189d5a340e2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/com/syouth/CTCI1_1$CompressionNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/com/syouth/CTCI1_1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/com/syouth/tests/CTC1_1Tests.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/syouth/CTCI2.java" afterPath="$PROJECT_DIR$/src/com/syouth/CTCI2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java" afterPath="$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java" />
     </list>
     <ignored path="CrackingTheCodingInterview.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +38,7 @@
       <file leaf-file-name="CTCI1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
+            <state relative-caret-position="476">
               <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,21 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CTCI2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CTCI2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+            <state relative-caret-position="484">
+              <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CTC2Tests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CTC2Tests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
+            <state relative-caret-position="527">
+              <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,7 +208,7 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="RunManager" selected="JUnit.CTC2Tests.testPartitionLinkedList">
+  <component name="RunManager" selected="JUnit.CTC2Tests.testLinkedListAdd">
     <configuration default="false" name="CTC2Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -226,32 +223,6 @@
       <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CTC2Tests.testFindKth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.syouth.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CrackingTheCodingInterview" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.syouth.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
-      <option name="METHOD_NAME" value="testFindKth" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -329,6 +300,32 @@
       <option name="PACKAGE_NAME" value="com.syouth.tests" />
       <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
       <option name="METHOD_NAME" value="testPartitionLinkedList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CTC2Tests.testLinkedListAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.syouth.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CrackingTheCodingInterview" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.syouth.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
+      <option name="METHOD_NAME" value="testLinkedListAdd" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -556,18 +553,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CTC2Tests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKth" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKthNotPossible" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDeleteElem" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPartitionLinkedList" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKthNotPossible" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDeleteElem" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPartitionLinkedList" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testLinkedListAdd" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPartitionLinkedList" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDeleteElem" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKthNotPossible" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKth" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testLinkedListAdd" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPartitionLinkedList" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDeleteElem" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKthNotPossible" />
       </list>
     </recent_temporary>
   </component>
@@ -588,17 +585,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CTC2Tests - 2016.06.21 at 13h 45m 08s.xml">
-      <configuration name="CTC2Tests" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 03m 50s.xml">
+      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testDeleteElem - 2016.06.21 at 13h 49m 17s.xml">
-      <configuration name="CTC2Tests.testDeleteElem" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 04m 33s.xml">
+      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testDeleteElem - 2016.06.21 at 13h 52m 05s.xml">
-      <configuration name="CTC2Tests.testDeleteElem" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 04m 43s.xml">
+      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.21 at 16h 50m 15s.xml">
-      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 06m 34s.xml">
+      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 06m 42s.xml">
+      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.21 at 17h 03m 33s.xml">
       <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
@@ -609,14 +609,11 @@
     <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.21 at 17h 10m 07s.xml">
       <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testRemoveHaveNoDups - 2016.06.21 at 12h 52m 39s.xml">
-      <configuration name="CTC2Tests.testRemoveHaveNoDups" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.24 at 17h 04m 04s.xml">
+      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testRemoveHaveNoDups - 2016.06.21 at 13h 00m 59s.xml">
-      <configuration name="CTC2Tests.testRemoveHaveNoDups" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CTC2Tests_testRemoveHaveNoDups - 2016.06.21 at 13h 03m 10s.xml">
-      <configuration name="CTC2Tests.testRemoveHaveNoDups" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.24 at 17h 04m 54s.xml">
+      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -631,7 +628,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32971996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32971996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -677,18 +674,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/syouth/CTCI2.java</url>
-          <line>49</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java</url>
-          <line>91</line>
+          <line>111</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -791,18 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
+        <state relative-caret-position="476">
           <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -811,9 +798,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+        <state relative-caret-position="484">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

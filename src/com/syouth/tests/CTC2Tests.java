@@ -105,4 +105,30 @@ public class CTC2Tests {
             cur = cur.next;
         }
     }
+
+    @Test
+    public void testLinkedListAdd() {
+        {
+            CTCI2.Node num1 = new CTCI2.Node(7);
+            num1.appendToTail(1);
+            num1.appendToTail(6);
+            CTCI2.Node num2 = new CTCI2.Node(5);
+            num2.appendToTail(9);
+            num2.appendToTail(2);
+            CTCI2.Node result = CTCI2.AddLinkedLists(num1, num2);
+            CTCI2.Node test = new CTCI2.Node(2);
+            test.appendToTail(1);
+            test.appendToTail(9);
+            Assert.assertEquals(test, result);
+        }
+        {
+            CTCI2.Node num1 = new CTCI2.Node(5);
+            CTCI2.Node num2 = new CTCI2.Node(5);
+            CTCI2.Node result = CTCI2.AddLinkedLists(num1, num2);
+            CTCI2.Node test = new CTCI2.Node(0);
+            test.appendToTail(1);
+            Assert.assertEquals(test, result);
+        }
+
+    }
 }
