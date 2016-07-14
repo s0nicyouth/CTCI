@@ -1,6 +1,8 @@
 package com.syouth;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Stack;
 
 /**
  * Created by anton.ivanov on 6/20/2016.
@@ -56,6 +58,24 @@ public class CTCI2 {
             }
 
             return true;
+        }
+    }
+
+    public static class NodeNoEq {
+        public NodeNoEq next = null;
+        public int data;
+
+        public NodeNoEq(int d) {
+            data = d;
+        }
+
+        public void appendToTail(int d) {
+            NodeNoEq end = new NodeNoEq(d);
+            NodeNoEq n = this;
+            while (n.next != null) {
+                n = n.next;
+            }
+            n.next = end;
         }
     }
 
@@ -155,7 +175,7 @@ public class CTCI2 {
     public static Node AddLinkedLists(Node l1, Node l2) {
         Node result = null;
         int carry = 0;
-        while (l1 != null && l2 != null) {
+        while (l1 != null || l2 != null) {
             int l1n = l1 != null ? l1.data : 0;
             int l2n = l2 != null ? l2.data : 0;
             int sum = l1n + l2n + carry;
@@ -175,8 +195,8 @@ public class CTCI2 {
                 carry = 1;
             }
 
-            l1 = l1.next;
-            l2 = l2.next;
+            l1 = l1 != null ? l1.next : null;
+            l2 = l2 != null ? l2.next : null;
         }
 
         if (carry == 1) {
@@ -184,5 +204,148 @@ public class CTCI2 {
         }
 
         return result;
+    }
+
+    public static Node AddLinkedListsForward(Node l1, Node l2) {
+        int l1Len = 0;
+        Node l1Counter = l1;
+        while (l1Counter != null) {
+            l1Len++;
+            l1Counter = l1Counter.next;
+        }
+        int l2Len = 0;
+        Node l2Counter = l2;
+        while (l2Counter != null) {
+            l2Len++;
+            l2Counter = l2Counter.next;
+        }
+        Node result = null;
+        Node current = null;
+        if (l1Len > l2Len) {
+            while (l1Len != l2Len) {
+                if (current == null) {
+                    current = new Node(l1.data);
+                    result = current;
+                } else {
+                    current.next = new Node(l1.data);
+                    current = current.next;
+                }
+                l1 = l1.next;
+                l1Len--;
+            }
+        } else {
+            while (l2Len > l1Len) {
+                if (current == null) {
+                    current = new Node(l2.data);
+                    result = current;
+                } else {
+                    current.next = new Node(l2.data);
+                }
+                l2 = l2.next;
+                l2Len--;
+            }
+        }
+        while (l1 != null || l2 != null) {
+            int l1Val = l1 != null ? l1.data : 0;
+            int l2Val = l2 != null ? l2.data : 0;
+            int res = l1Val + l2Val;
+            if (res < 10) {
+                if (current == null) {
+                    current = new Node(res);
+                    result = current;
+                } else {
+                    current.next = new Node(res);
+                    current = current.next;
+                }
+            } else {
+                if (current == null) {
+                    current = new Node(1);
+                    current.next = new Node(res % 10);
+                    result = current;
+                } else {
+                    current.data++;
+                    current.next = new Node(res % 10);
+                }
+                current = current.next;
+            }
+
+            l1 = l1 != null ? l1.next : null;
+            l2 = l2 != null ? l2.next : null;
+        }
+
+        return result;
+    }
+
+    private static NodeNoEq getLoopNodeRecursive(NodeNoEq start, HashMap<NodeNoEq, Integer> map) {
+        if (start == null) {
+            return null;
+        }
+        if (map.containsKey(start) && map.get(start) == 1) {
+            return start;
+        }
+        map.put(start, 1);
+        NodeNoEq n = getLoopNodeRecursive(start.next, map);
+        map.put(start, 2);
+        return n;
+    }
+
+    public static NodeNoEq getLoopNodeTopSort(NodeNoEq start) {
+        HashMap<NodeNoEq, Integer> visitedNodes = new HashMap<>();
+        return getLoopNodeRecursive(start, visitedNodes);
+    }
+
+    public static Node getLoopNodeIterable(Node start) {
+        if (start == null) {
+            return null;
+        }
+        Node runner1 = start;
+        Node runner2 = start;
+        do {
+            runner1 = runner1.next;
+            runner2 = runner2.next;
+            if (runner2 != null) {
+                runner2 = runner2.next;
+            }
+        } while (runner1 != runner2 && runner2 != null);
+        if (runner2 == null) {
+            return null;
+        } else {
+            runner1 = start;
+            while (runner1 != runner2) {
+                runner1 = runner1.next;
+                runner2 = runner2.next;
+            }
+            return runner1;
+        }
+    }
+
+    public static boolean checkLinkedListPalindrome(Node start) {
+        int len = 0;
+        Node lenStart = start;
+        while (lenStart != null) {
+            lenStart = lenStart.next;
+            len++;
+        }
+
+        int div = (int) Math.floor(len / 2);
+        Stack<Node> reverseStack = new Stack<>();
+        lenStart = start;
+        for (int i = 0; i < div; i++) {
+            reverseStack.push(lenStart);
+            lenStart = lenStart.next;
+        }
+        if (len % 2 == 0) {
+        } else {
+            lenStart = lenStart.next;
+        }
+        for (int i = (len % 2 == 0 ? div + 1 : div  + 2); i < len; i++) {
+            if (reverseStack.pop().data != lenStart.data) {
+                return false;
+            } else {
+                lenStart = lenStart.next;
+            }
+        }
+
+        return true;
     }
 }

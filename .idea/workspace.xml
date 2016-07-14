@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efb87398-9a70-4d2e-bbfc-4189d5a340e2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/com/syouth/Main.class" afterPath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/com/syouth/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/syouth/CTCI2.java" afterPath="$PROJECT_DIR$/src/com/syouth/CTCI2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/syouth/Main.java" afterPath="$PROJECT_DIR$/src/com/syouth/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java" afterPath="$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java" />
     </list>
     <ignored path="CrackingTheCodingInterview.iws" />
@@ -15,7 +18,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -28,8 +30,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -38,10 +40,10 @@
       <file leaf-file-name="CTCI1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="1734">
               <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -50,9 +52,11 @@
       <file leaf-file-name="CTCI2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="237">
+              <caret line="332" column="39" selection-start-line="332" selection-start-column="39" selection-end-line="332" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,11 +64,9 @@
       <file leaf-file-name="CTC2Tests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="3706">
+              <caret line="220" column="31" selection-start-line="220" selection-start-column="31" selection-end-line="220" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,11 +74,9 @@
       <file leaf-file-name="CTC1Tests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC1Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,6 +107,8 @@
         <option value="$PROJECT_DIR$/src/com/syouth/tests/CTC1_1Tests.java" />
         <option value="$PROJECT_DIR$/src/com/syouth/CTCI1_1.java" />
         <option value="$PROJECT_DIR$/src/com/syouth/CTCI1.java" />
+        <option value="$PROJECT_DIR$/src/com/syouth/Project_Euler_66.java" />
+        <option value="$PROJECT_DIR$/src/com/syouth/Main.java" />
         <option value="$PROJECT_DIR$/src/com/syouth/CTCI2.java" />
         <option value="$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java" />
       </list>
@@ -208,7 +210,12 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="RunManager" selected="JUnit.CTC2Tests.testLinkedListAdd">
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="JUnit.CTC2Tests">
     <configuration default="false" name="CTC2Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -235,7 +242,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CTC2Tests.testFindKthNotPossible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CTC2Tests.testLinkedListAddForward" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.syouth.tests.*" />
@@ -247,7 +254,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.syouth.tests" />
       <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
-      <option name="METHOD_NAME" value="testFindKthNotPossible" />
+      <option name="METHOD_NAME" value="testLinkedListAddForward" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -261,7 +268,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CTC2Tests.testDeleteElem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CTC2Tests.testDetectLoopTopSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.syouth.tests.*" />
@@ -273,7 +280,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.syouth.tests" />
       <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
-      <option name="METHOD_NAME" value="testDeleteElem" />
+      <option name="METHOD_NAME" value="testDetectLoopTopSort" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -287,7 +294,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CTC2Tests.testPartitionLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CTC2Tests.testDetectLoopIterable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.syouth.tests.*" />
@@ -299,7 +306,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.syouth.tests" />
       <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
-      <option name="METHOD_NAME" value="testPartitionLinkedList" />
+      <option name="METHOD_NAME" value="testDetectLoopIterable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -313,7 +320,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CTC2Tests.testLinkedListAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CTC2Tests.testPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.syouth.tests.*" />
@@ -325,7 +332,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.syouth.tests" />
       <option name="MAIN_CLASS_NAME" value="com.syouth.tests.CTC2Tests" />
-      <option name="METHOD_NAME" value="testLinkedListAdd" />
+      <option name="METHOD_NAME" value="testPalindrome" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -352,11 +359,19 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -372,9 +387,17 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <method />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -553,18 +576,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CTC2Tests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKthNotPossible" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDeleteElem" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPartitionLinkedList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testLinkedListAdd" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testLinkedListAddForward" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDetectLoopTopSort" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDetectLoopIterable" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPalindrome" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testLinkedListAdd" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPartitionLinkedList" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDeleteElem" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testFindKthNotPossible" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CTC2Tests" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testPalindrome" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDetectLoopIterable" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testDetectLoopTopSort" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CTC2Tests.testLinkedListAddForward" />
       </list>
     </recent_temporary>
   </component>
@@ -585,35 +608,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 03m 50s.xml">
-      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testDetectLoopIterable - 2016.07.14 at 13h 13m 56s.xml">
+      <configuration name="CTC2Tests.testDetectLoopIterable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 04m 33s.xml">
-      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testDetectLoopIterable - 2016.07.14 at 13h 15m 07s.xml">
+      <configuration name="CTC2Tests.testDetectLoopIterable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 04m 43s.xml">
-      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testDetectLoopTopSort - 2016.07.14 at 12h 53m 27s.xml">
+      <configuration name="CTC2Tests.testDetectLoopTopSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 06m 34s.xml">
-      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPalindrome - 2016.07.14 at 13h 27m 39s.xml">
+      <configuration name="CTC2Tests.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testLinkedListAdd - 2016.06.24 at 17h 06m 42s.xml">
-      <configuration name="CTC2Tests.testLinkedListAdd" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPalindrome - 2016.07.14 at 13h 28m 43s.xml">
+      <configuration name="CTC2Tests.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.21 at 17h 03m 33s.xml">
-      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPalindrome - 2016.07.14 at 13h 29m 44s.xml">
+      <configuration name="CTC2Tests.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.21 at 17h 06m 50s.xml">
-      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPalindrome - 2016.07.14 at 13h 29m 48s.xml">
+      <configuration name="CTC2Tests.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.21 at 17h 10m 07s.xml">
-      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPalindrome - 2016.07.14 at 13h 30m 05s.xml">
+      <configuration name="CTC2Tests.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.24 at 17h 04m 04s.xml">
-      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPalindrome - 2016.07.14 at 13h 30m 25s.xml">
+      <configuration name="CTC2Tests.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTC2Tests_testPartitionLinkedList - 2016.06.24 at 17h 04m 54s.xml">
-      <configuration name="CTC2Tests.testPartitionLinkedList" configurationId="JUnit" />
+    <history-entry file="CTC2Tests_testPalindrome - 2016.07.14 at 13h 30m 30s.xml">
+      <configuration name="CTC2Tests.testPalindrome" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -624,20 +647,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32971996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971996" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39927733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -674,7 +697,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/syouth/CTCI2.java</url>
-          <line>83</line>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -684,8 +707,26 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java</url>
+          <line>145</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java</url>
+          <line>187</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java</url>
+          <line>200</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -694,6 +735,140 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC1Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/Project_Euler_66.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC1Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/Project_Euler_66.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC1Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syouth/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -707,7 +882,7 @@
         <state relative-caret-position="1768">
           <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -716,17 +891,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1751">
+          <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -734,9 +909,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -744,6 +917,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC1Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -776,43 +985,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC1Tests.java">
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+        <state relative-caret-position="1734">
+          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI1.java">
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/Project_Euler_66.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC1Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/syouth/CTCI2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+        <state relative-caret-position="237">
+          <caret line="332" column="39" selection-start-line="332" selection-start-column="39" selection-end-line="332" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/syouth/tests/CTC2Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3706">
+          <caret line="220" column="31" selection-start-line="220" selection-start-column="31" selection-end-line="220" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>CrackingTheCodingInterview</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
