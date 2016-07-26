@@ -220,5 +220,18 @@ public class CTC2Tests {
             start.appendToTail(1);
             Assert.assertFalse(CTCI2.checkLinkedListPalindrome(start));
         }
+        {
+            CTCI2.Node start = new CTCI2.Node(1);
+            start.appendToTail(2);
+            start.appendToTail(3);
+            start.appendToTail(3);
+            start.appendToTail(3);
+            start.appendToTail(3);
+            start.appendToTail(3);
+            start.appendToTail(3);
+            start.appendToTail(2);
+            start.appendToTail(1);
+            Assert.assertTrue(CTCI2.checkLinkedListPalindrome(start));
+        }
     }
 }
