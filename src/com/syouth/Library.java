@@ -1,5 +1,7 @@
 package com.syouth;
 
+import java.util.LinkedList;
+
 /**
  * Created by anton.ivanov on 8/5/2016.
  */
@@ -26,6 +28,25 @@ public class Library {
             if (node != null) {
                 node.parent = this;
             }
+        }
+    }
+
+    public static class GraphNode {
+        private LinkedList<GraphNode> neithbors = new LinkedList<>();
+        int data;
+
+        public GraphNode() {}
+
+        public GraphNode(int data) {
+            this.data = data;
+        }
+
+        public void addNeighbor(GraphNode node) {
+            neithbors.add(node);
+        }
+
+        public LinkedList<GraphNode> getNeigthbors() {
+            return neithbors;
         }
     }
 }
