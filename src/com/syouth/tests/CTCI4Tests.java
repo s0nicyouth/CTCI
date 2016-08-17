@@ -5,6 +5,7 @@ import com.syouth.Library;
 import org.junit.Assert;
 import org.junit.Test;
 import sun.awt.image.ImageWatched;
+import sun.reflect.generics.tree.Tree;
 
 import java.util.LinkedList;
 
@@ -54,10 +55,29 @@ public class CTCI4Tests {
 
     @Test
     public void testLayers() {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
 
         Library.TreeNode root = CTCI4.CreateMinimalBST(arr);
 
         LinkedList<LinkedList<Library.TreeNode>> layers = CTCI4.PrintBTByLayers(root);
+        LinkedList<LinkedList<Integer>> layers_check = new LinkedList<>();
+        layers_check.add(new LinkedList<>());
+        layers_check.add(new LinkedList<>());
+        layers_check.add(new LinkedList<>());
+        layers_check.get(0).add(4);
+        layers_check.get(1).add(2);
+        layers_check.get(1).add(6);
+        layers_check.get(2).add(1);
+        layers_check.get(2).add(3);
+        layers_check.get(2).add(5);
+        layers_check.get(2).add(7);
+        Assert.assertEquals(3, layers.size());
+        for (int i = 0; i < 3; i++) {
+            int j = 0;
+            for (Library.TreeNode n : layers.get(i)) {
+                Assert.assertEquals(n.data, layers_check.get(i).get(j).intValue());
+                j++;
+            }
+        }
     }
 }

@@ -88,4 +88,21 @@ public class CTCI4 {
 
         return result;
     }
+
+    private static int getBranchHeight(Library.TreeNode n) {
+        if (n == null) {
+            return 0;
+        }
+
+        return 1 + Math.max(getBranchHeight(n.left), getBranchHeight(n.rigth));
+    }
+
+    public static boolean CheckBalanced(Library.TreeNode node) {
+        int hDiff = Math.abs(getBranchHeight(node.left) - getBranchHeight(node.rigth));
+        if (hDiff > 1) {
+            return false;
+        } else {
+            return CheckBalanced(node.left) && CheckBalanced(node.rigth);
+        }
+    }
 }
