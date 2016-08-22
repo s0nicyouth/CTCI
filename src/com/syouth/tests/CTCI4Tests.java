@@ -4,8 +4,6 @@ import com.syouth.CTCI4;
 import com.syouth.Library;
 import org.junit.Assert;
 import org.junit.Test;
-import sun.awt.image.ImageWatched;
-import sun.reflect.generics.tree.Tree;
 
 import java.util.LinkedList;
 
@@ -78,6 +76,25 @@ public class CTCI4Tests {
                 Assert.assertEquals(n.data, layers_check.get(i).get(j).intValue());
                 j++;
             }
+        }
+    }
+
+    @Test
+    public void testIsBST() {
+        {
+            int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+
+            Library.TreeNode root = CTCI4.CreateMinimalBST(arr);
+
+            Assert.assertTrue(CTCI4.IsBST(root));
+            Assert.assertTrue(CTCI4.IsBSTRecursive(root));
+        }
+        {
+            int[] arr = {1, 2, 3, 4, 5, 7, 6, 8, 9, 10, 11};
+
+            Library.TreeNode root = CTCI4.CreateMinimalBST(arr);
+
+            Assert.assertFalse(CTCI4.IsBST(root));
         }
     }
 }

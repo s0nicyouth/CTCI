@@ -105,4 +105,49 @@ public class CTCI4 {
             return CheckBalanced(node.left) && CheckBalanced(node.rigth);
         }
     }
+
+    private static void TraverseDepthNaturalOrder(Library.TreeNode root, LinkedList<Integer> sorted) {
+        if (root == null) {
+            return;
+        }
+        TraverseDepthNaturalOrder(root.left, sorted);
+        sorted.add(root.data);
+        TraverseDepthNaturalOrder(root.rigth, sorted);
+    }
+
+    public static boolean IsBST(Library.TreeNode root) {
+        LinkedList<Integer> sorted = new LinkedList<>();
+        TraverseDepthNaturalOrder(root, sorted);
+        for (int i = 1; i < sorted.size(); i++) {
+            if (sorted.get(i - 1) > sorted.get(i)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static boolean IsBSTRecursive(Library.TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        boolean leftResult = true;
+        if (root.left != null) {
+            if (root.data < root.left.data) {
+                return false;
+            } else {
+                leftResult = IsBSTRecursive(root.left);
+            }
+        }
+        boolean rightResult = true;
+        if (root.rigth != null) {
+            if (root.rigth.data < root.data) {
+                return false;
+            } else {
+                rightResult = IsBSTRecursive(root.rigth);
+            }
+        }
+
+        return leftResult && rightResult;
+    }
 }
