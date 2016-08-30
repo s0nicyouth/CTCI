@@ -1,9 +1,8 @@
 package com.syouth;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
+import javafx.util.Pair;
+
+import java.util.*;
 
 /**
  * Created by anton.ivanov on 8/5/2016.
@@ -149,5 +148,37 @@ public class CTCI4 {
         }
 
         return leftResult && rightResult;
+    }
+
+    private static void TopologycallySort(HashSet<Character> visited, Character root, HashMap<Character, List<Character>> graph, List<Character> result) {
+        if (root == null || visited.contains(root)) {
+            return;
+        }
+        if (graph.containsKey(root)) {
+            for (Character n : graph.get(root)) {
+                TopologycallySort(visited, n, graph, result);
+            }
+        }
+
+        result.add(root);
+        visited.add(root);
+    }
+
+    public static List<Character> FindBuildOrder(List<Character> projects, List<Pair<Character, Character>> dependencies) {
+        HashMap<Character, List<Character>> graph = new HashMap<>();
+        for (Pair<Character, Character> p : dependencies) {
+            if (!graph.containsKey(p.getKey())) {
+                graph.put(p.getKey(), new LinkedList<>());
+            }
+            graph.get(p.getKey()).add(p.getValue());
+        }
+
+        HashSet<Character> visited = new HashSet<>();
+        List<Character> result = new LinkedList<>();
+        for (Character c : projects) {
+            TopologycallySort(visited, c, graph, result);
+        }
+
+        return result;
     }
 }

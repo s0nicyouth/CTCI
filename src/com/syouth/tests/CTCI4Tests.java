@@ -2,10 +2,13 @@ package com.syouth.tests;
 
 import com.syouth.CTCI4;
 import com.syouth.Library;
+import javafx.util.Pair;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by anton.ivanov on 8/5/2016.
@@ -95,6 +98,28 @@ public class CTCI4Tests {
             Library.TreeNode root = CTCI4.CreateMinimalBST(arr);
 
             Assert.assertFalse(CTCI4.IsBST(root));
+        }
+    }
+
+    @Test
+    public void testFindBuildOrder() {
+        {
+            LinkedList<Character> projects = new LinkedList<>();
+            projects.add('a');
+            projects.add('b');
+            projects.add('c');
+            projects.add('d');
+            projects.add('e');
+            projects.add('f');
+            LinkedList<Pair<Character, Character>> pairs = new LinkedList<>();
+            pairs.add(new Pair<>('d', 'a'));
+            pairs.add(new Pair<>('b', 'f'));
+            pairs.add(new Pair<>('d', 'b'));
+            pairs.add(new Pair<>('a', 'f'));
+            pairs.add(new Pair<>('c', 'd'));
+            List<Character> result = CTCI4.FindBuildOrder(projects, pairs);
+            List<Character> testResult = Arrays.asList('f', 'e', 'a', 'b', 'd', 'c');
+            Assert.assertEquals(testResult, result);
         }
     }
 }

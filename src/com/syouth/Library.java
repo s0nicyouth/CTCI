@@ -1,6 +1,9 @@
 package com.syouth;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by anton.ivanov on 8/5/2016.
@@ -33,7 +36,8 @@ public class Library {
 
     public static class GraphNode {
         private LinkedList<GraphNode> neithbors = new LinkedList<>();
-        int data;
+        public int data;
+        public Character cData = null;
 
         public GraphNode() {}
 
@@ -47,6 +51,30 @@ public class Library {
 
         public LinkedList<GraphNode> getNeigthbors() {
             return neithbors;
+        }
+
+        public static GraphNode FindNodeWithData(GraphNode root, Character toFind) {
+            Queue<GraphNode> query = new LinkedList<>();
+            query.add(root);
+            HashSet<GraphNode> visited = new HashSet<>();
+            visited.add(root);
+            while (!query.isEmpty()) {
+                GraphNode current = query.remove();
+                if (current.cData.equals(toFind)) {
+                    return current;
+                } else {
+                    for (GraphNode neighbour : current.getNeigthbors()) {
+                        if (visited.contains(neighbour)) {
+                            continue;
+                        } else {
+                            visited.add(neighbour);
+                            query.add(neighbour);
+                        }
+                    }
+                }
+            }
+
+            return null;
         }
     }
 }
