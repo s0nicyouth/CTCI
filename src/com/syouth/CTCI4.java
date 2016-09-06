@@ -1,6 +1,5 @@
 package com.syouth;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -149,5 +148,31 @@ public class CTCI4 {
         }
 
         return leftResult && rightResult;
+    }
+
+    private static boolean IsNodeInSubtree(Library.TreeNode root, Library.TreeNode node, Library.TreeNode n2) {
+        if (root == null) {
+            return false;
+        }
+        if (root == node || root == n2) {
+            return true;
+        } else {
+            return IsNodeInSubtree(root.rigth, node, n2) || IsNodeInSubtree(root.left, node, n2);
+        }
+    }
+
+    public static Library.TreeNode FindFirstCommonAncestor(Library.TreeNode treeRoot, Library.TreeNode n1,
+                                                           Library.TreeNode n2) {
+        boolean inRightSubtree = IsNodeInSubtree(treeRoot.rigth, n1, n2);
+        boolean inLeftSubtree = IsNodeInSubtree(treeRoot.left, n1, n2);
+        if (inLeftSubtree && inRightSubtree) {
+            return treeRoot;
+        } else if (inLeftSubtree && (treeRoot.left != n1 && treeRoot.left != n2)) {
+            return FindFirstCommonAncestor(treeRoot.left, n1, n2);
+        } else if (inRightSubtree && (treeRoot.rigth != n1 && treeRoot.rigth != n2)){
+            return FindFirstCommonAncestor(treeRoot.rigth, n1, n2);
+        } else {
+            return treeRoot;
+        }
     }
 }
