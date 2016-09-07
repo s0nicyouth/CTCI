@@ -123,7 +123,8 @@ public class CTCI4Tests {
         }
     }
 
-    public void TestFindCommonAncentor() {
+    @Test
+    public void testFindCommonAncentor() {
         {
             Library.TreeNode root = new Library.TreeNode(1);
             Library.TreeNode n1 = root.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(4));
