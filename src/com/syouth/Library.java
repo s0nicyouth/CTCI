@@ -19,18 +19,22 @@ public class Library {
             this.data = data;
         }
 
-        public void setRight(TreeNode node) {
+        public TreeNode setRight(TreeNode node) {
             rigth = node;
             if (node != null) {
                 node.parent = this;
             }
+
+            return node;
         }
 
-        public void setLeft(TreeNode node) {
+        public TreeNode setLeft(TreeNode node) {
             left = node;
             if (node != null) {
                 node.parent = this;
             }
+
+            return node;
         }
     }
 

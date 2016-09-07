@@ -122,4 +122,57 @@ public class CTCI4Tests {
             Assert.assertEquals(testResult, result);
         }
     }
+
+    public void TestFindCommonAncentor() {
+        {
+            Library.TreeNode root = new Library.TreeNode(1);
+            Library.TreeNode n1 = root.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(4));
+            Library.TreeNode n2 = root.setRight(new Library.TreeNode(3)).setLeft(new Library.TreeNode(5));
+            Assert.assertEquals(root, CTCI4.FindFirstCommonAncestor(root, n1, n2));
+        }
+        {
+            Library.TreeNode root = new Library.TreeNode(1);
+            Library.TreeNode temp = root.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(4));
+            temp.setRight(new Library.TreeNode(10));
+            temp.setLeft(new Library.TreeNode(22));
+            Library.TreeNode commonAncentor = root.setRight(new Library.TreeNode(3)).setLeft(new Library.TreeNode(5));
+            Library.TreeNode n1 = commonAncentor.setLeft(new Library.TreeNode(22));
+            Library.TreeNode n2 = commonAncentor.setRight(new Library.TreeNode(98)).setLeft(new Library.TreeNode(2));
+            Assert.assertEquals(commonAncentor, CTCI4.FindFirstCommonAncestor(root, n1, n2));
+        }
+        {
+            Library.TreeNode root = new Library.TreeNode(1);
+            root.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(4));
+            Library.TreeNode commonAncentor = root.setRight(new Library.TreeNode(3));
+            Library.TreeNode n2 = commonAncentor.setLeft(new Library.TreeNode(5));
+            Library.TreeNode n1 = n2.setRight(new Library.TreeNode(2));
+            Assert.assertEquals(commonAncentor, CTCI4.FindFirstCommonAncestor(root, n1, n2));
+        }
+        {
+            Library.TreeNode root = new Library.TreeNode(1);
+            root.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(4));
+            Library.TreeNode commonAncentor = root.setRight(new Library.TreeNode(3));
+            Library.TreeNode n2 = commonAncentor.setLeft(new Library.TreeNode(5));
+            Library.TreeNode n1 = n2.setRight(new Library.TreeNode(2));
+            Assert.assertEquals(null, CTCI4.FindFirstCommonAncestor(root, new Library.TreeNode(2),
+                    new Library.TreeNode(4)));
+        }
+        {
+            Library.TreeNode root = new Library.TreeNode(1);
+            root.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(4));
+            Library.TreeNode commonAncentor = root.setRight(new Library.TreeNode(3));
+            Library.TreeNode n2 = commonAncentor.setLeft(new Library.TreeNode(5));
+            Library.TreeNode n1 = n2.setRight(new Library.TreeNode(2));
+            Assert.assertEquals(null, CTCI4.FindFirstCommonAncestor(root, null, null));
+        }
+
+        {
+            Library.TreeNode root = new Library.TreeNode(1);
+            root.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(4));
+            Library.TreeNode commonAncentor = root.setRight(new Library.TreeNode(3));
+            Library.TreeNode n2 = commonAncentor.setLeft(new Library.TreeNode(5));
+            Library.TreeNode n1 = n2.setRight(new Library.TreeNode(2));
+            Assert.assertEquals(null, CTCI4.FindFirstCommonAncestor(root, n1, new Library.TreeNode(3)));
+        }
+    }
 }

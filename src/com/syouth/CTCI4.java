@@ -3,6 +3,9 @@ package com.syouth;
 import javafx.util.Pair;
 
 import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by anton.ivanov on 8/5/2016.
@@ -180,5 +183,73 @@ public class CTCI4 {
         }
 
         return result;
+    }
+
+    private static boolean AssureAllNodesExist(Library.TreeNode root, Library.TreeNode n1, Library.TreeNode n2) {
+        if (root == null) {
+            return false;
+        }
+        Queue<Library.TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        boolean n1Found = false;
+        boolean n2Found = false;
+        while (!queue.isEmpty()) {
+            Library.TreeNode current = queue.remove();
+            if (current == n1) {
+                n1Found = true;
+                if (n2Found) {
+                    return true;
+                }
+            }
+            if (current == n2) {
+                n2Found = true;
+                if (n1Found) {
+                    return true;
+                }
+            }
+            if (current.left != null) {
+                queue.add(current.left);
+            }
+            if (current.rigth != null) {
+                queue.add(current.rigth);
+            }
+        }
+
+        return false;
+    }
+
+    private static boolean IsNodeInSubtree(Library.TreeNode root, Library.TreeNode node, Library.TreeNode n2) {
+        if (root == null) {
+            return false;
+        }
+        if (root == node || root == n2) {
+            return true;
+        } else {
+            return IsNodeInSubtree(root.rigth, node, n2) || IsNodeInSubtree(root.left, node, n2);
+        }
+    }
+
+    private static Library.TreeNode FindFirstCommonAncestorInternal(Library.TreeNode treeRoot, Library.TreeNode n1,
+                                                           Library.TreeNode n2) {
+        boolean inRightSubtree = IsNodeInSubtree(treeRoot.rigth, n1, n2);
+        boolean inLeftSubtree = IsNodeInSubtree(treeRoot.left, n1, n2);
+        if (inLeftSubtree && inRightSubtree) {
+            return treeRoot;
+        } else if (inLeftSubtree && (treeRoot.left != n1 && treeRoot.left != n2)) {
+            return FindFirstCommonAncestor(treeRoot.left, n1, n2);
+        } else if (inRightSubtree && (treeRoot.rigth != n1 && treeRoot.rigth != n2)){
+            return FindFirstCommonAncestor(treeRoot.rigth, n1, n2);
+        } else {
+            return treeRoot;
+        }
+    }
+
+    public static Library.TreeNode FindFirstCommonAncestor(Library.TreeNode treeRoot, Library.TreeNode n1,
+                                                           Library.TreeNode n2) {
+        if (!AssureAllNodesExist(treeRoot, n1, n2)) {
+            return null;
+        }
+
+        return FindFirstCommonAncestorInternal(treeRoot, n1, n2);
     }
 }
