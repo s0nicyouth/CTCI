@@ -252,4 +252,49 @@ public class CTCI4 {
 
         return FindFirstCommonAncestorInternal(treeRoot, n1, n2);
     }
+
+    private static void PrintSumPathsRec(Library.TreeNode root, int sum,
+                                         HashMap<Integer, LinkedList<Library.TreeNode>> sumUpTo,
+                                         LinkedList<Library.TreeNode> curPath,
+                                         int prevSum) {
+        if (root == null) {
+            return;
+        }
+        curPath.add(root);
+        int curSum = prevSum + root.data;
+        if (sumUpTo.containsKey(curSum - sum)) {
+            LinkedList<Library.TreeNode> nodes = sumUpTo.get(curSum - sum);
+            for (Library.TreeNode n : nodes) {
+                int index = curPath.indexOf(n);
+                if (n == null) {
+                    index = -1;
+                }
+                for (int i = index + 1; i < curPath.size(); i++) {
+                    System.out.print(curPath.get(i).data + "->");
+                }
+                System.out.print("\n");
+            }
+        }
+
+        if (!sumUpTo.containsKey(curSum)) {
+            sumUpTo.put(curSum, new LinkedList<>());
+        }
+        sumUpTo.get(curSum).add(root);
+
+        PrintSumPathsRec(root.left, sum, sumUpTo, curPath, curSum);
+        PrintSumPathsRec(root.rigth, sum, sumUpTo, curPath, curSum);
+        curPath.removeLast();
+        sumUpTo.get(curSum).removeLast();
+        if (sumUpTo.get(curSum).size() == 0) {
+            sumUpTo.remove(curSum);
+        }
+    }
+
+    public static void PrintAllSumPathes(Library.TreeNode root, int sum) {
+        HashMap<Integer, LinkedList<Library.TreeNode>> sumUpTo = new HashMap<>();
+        sumUpTo.put(0, new LinkedList<>());
+        sumUpTo.get(0).add(null);
+        LinkedList<Library.TreeNode> currentFullPath = new LinkedList<>();
+        PrintSumPathsRec(root, sum, sumUpTo, currentFullPath, 0);
+    }
 }

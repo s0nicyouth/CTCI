@@ -176,4 +176,17 @@ public class CTCI4Tests {
             Assert.assertEquals(null, CTCI4.FindFirstCommonAncestor(root, n1, new Library.TreeNode(3)));
         }
     }
+
+    @Test
+    public void testFindAllSumPaths() {
+        {
+            Library.TreeNode root = new Library.TreeNode(10);
+            Library.TreeNode right = root.setRight(new Library.TreeNode(2));
+            Library.TreeNode left = root.setLeft(new Library.TreeNode(8));
+            right.setLeft(new Library.TreeNode(2)).setRight(new Library.TreeNode(17)).setLeft(new Library.TreeNode(0)).setLeft(new Library.TreeNode(11)).setLeft(new Library.TreeNode(-11)).setLeft(new Library.TreeNode(34));
+            left.setLeft(new Library.TreeNode(3));
+            left.setRight(new Library.TreeNode(5));
+            CTCI4.PrintAllSumPathes(root, 21);
+        }
+    }
 }
