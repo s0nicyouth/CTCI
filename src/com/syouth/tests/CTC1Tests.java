@@ -1,5 +1,6 @@
 package com.syouth.tests;
 
+import com.sun.jdi.connect.Connector;
 import com.syouth.CTCI1;
 
 import org.junit.Assert;
@@ -83,5 +84,33 @@ public class CTC1Tests {
         Assert.assertEquals("aa", CTCI1.CompressString(str));
         str = "abcdefgh";
         Assert.assertEquals("abcdefgh", CTCI1.CompressString(str));
+    }
+
+    @Test
+    public void testCheckPalindromePermutation() {
+        {
+            String testStr = "Tact Coa";
+            Assert.assertTrue(CTCI1.CheckStringPalindromePermutation(testStr));
+        }
+        {
+            String testStr = "aaaaaaaa         ttt";
+            Assert.assertTrue(CTCI1.CheckStringPalindromePermutation(testStr));
+        }
+        {
+            String testStr = "aaaaaaaaa         ttt";
+            Assert.assertFalse(CTCI1.CheckStringPalindromePermutation(testStr));
+        }
+        {
+            String testStr = "Tact Coa      11";
+            Assert.assertTrue(CTCI1.CheckStringPalindromePermutation(testStr));
+        }
+        {
+            String testStr = "Tact Coa      1";
+            Assert.assertFalse(CTCI1.CheckStringPalindromePermutation(testStr));
+        }
+        {
+            String testStr = "1123";
+            Assert.assertFalse(CTCI1.CheckStringPalindromePermutation(testStr));
+        }
     }
 }

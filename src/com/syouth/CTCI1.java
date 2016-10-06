@@ -3,6 +3,7 @@ package com.syouth;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Map;
 
 /**
  * Created by anton.ivanov on 6/20/2016.
@@ -108,5 +109,53 @@ public class CTCI1 {
         buffer.append(String.valueOf(count));
 
         return str.length() > buffer.length() ? buffer.toString() : str;
+    }
+
+    public static boolean CheckStringPalindromePermutation(String str) {
+        str = str.toLowerCase();
+        HashMap<Character, Integer> mapCount = new HashMap<>();
+        for (int i = 0; i < str.length(); i++) {
+            char key = str.charAt(i);
+            if (key == ' ') {
+                continue;
+            }
+            if (mapCount.containsKey(key)) {
+                mapCount.put(key, mapCount.get(key) + 1);
+            } else {
+                mapCount.put(key, 1);
+            }
+        }
+
+        int numberOfEvenChars = 0;
+        for (Map.Entry<Character, Integer> e : mapCount.entrySet()) {
+            if (e.getValue() % 2 == 0) {
+                numberOfEvenChars++;
+            }
+        }
+
+        return ((mapCount.size() - numberOfEvenChars) <= 1);
+    }
+
+    public static boolean OneWay(String str1, String str2) {
+        int str1Length = str1.length();
+        int str2Length = str2.length();
+        if (Math.abs(str1Length - str2Length) > 1) {
+            return false;
+        }
+        if (str1Length == str2Length) {
+            boolean replaced = false;
+            for (int i = 0; i < str1Length; i++) {
+                if (str1.charAt(i) != str2.charAt(i)) {
+                    if (replaced) {
+                        return false;
+                    }
+                    replaced = true;
+                }
+            }
+
+            return true;
+        } else {
+
+        }
     }
 }
