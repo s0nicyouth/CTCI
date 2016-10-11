@@ -143,6 +143,18 @@ public class CTC2Tests {
     @Test
     public void testLinkedListAddForward() {
         {
+            CTCI2.Node num1 = new CTCI2.Node(9);
+            num1.appendToTail(9);
+            num1.appendToTail(6);
+            CTCI2.Node num2 = new CTCI2.Node(6);
+            CTCI2.Node test = new CTCI2.Node(1);
+            test.appendToTail(0);
+            test.appendToTail(0);
+            test.appendToTail(2);
+            CTCI2.Node result = CTCI2.AddLinkedListsForward(num1, num2);
+            Assert.assertEquals(test, result);
+        }
+        {
             CTCI2.Node num1 = new CTCI2.Node(6);
             num1.appendToTail(1);
             num1.appendToTail(7);

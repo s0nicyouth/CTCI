@@ -137,14 +137,15 @@ public class CTCI1 {
     }
 
     public static boolean OneWay(String str1, String str2) {
-        int str1Length = str1.length();
-        int str2Length = str2.length();
-        if (Math.abs(str1Length - str2Length) > 1) {
+        int str1len = str1.length();
+        int str2len = str2.length();
+        if (Math.abs(str1len - str2len) > 1) {
             return false;
         }
-        if (str1Length == str2Length) {
+
+        if (str1len == str2len) {
             boolean replaced = false;
-            for (int i = 0; i < str1Length; i++) {
+            for (int i = 0; i < str1len; i++) {
                 if (str1.charAt(i) != str2.charAt(i)) {
                     if (replaced) {
                         return false;
@@ -155,7 +156,28 @@ public class CTCI1 {
 
             return true;
         } else {
+            String minStr = str1len > str2len ? str2 : str1;
+            String maxStr = str2len > str1len ? str2 : str1;
+            int maxStrLen = Math.max(str1len, str2len);
+            int maxI = 0;
+            int minI = 0;
+            boolean inserted = false;
+            while (maxI < maxStrLen) {
+                if (maxStr.charAt(maxI) != minStr.charAt(minI)) {
+                    if (inserted) {
+                        return false;
+                    }
+                    inserted = true;
+                    maxI++;
+                } else {
+                    maxI++;
+                    if (minI < maxStrLen - 2) {
+                        minI++;
+                    }
+                }
+            }
 
+            return true;
         }
     }
 }

@@ -1,8 +1,6 @@
 package com.syouth.tests;
 
-import com.sun.jdi.connect.Connector;
 import com.syouth.CTCI1;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -111,6 +109,34 @@ public class CTC1Tests {
         {
             String testStr = "1123";
             Assert.assertFalse(CTCI1.CheckStringPalindromePermutation(testStr));
+        }
+    }
+
+    @Test
+    public void testOneWay() {
+        {
+            String str1 = "pale";
+            String str2 = "ple";
+            Assert.assertTrue(CTCI1.OneWay(str1, str2));
+            Assert.assertTrue(CTCI1.OneWay(str2, str1));
+        }
+        {
+            String str1 = "pales";
+            String str2 = "pale";
+            Assert.assertTrue(CTCI1.OneWay(str1, str2));
+            Assert.assertTrue(CTCI1.OneWay(str2, str1));
+        }
+        {
+            String str1 = "pale";
+            String str2 = "bale";
+            Assert.assertTrue(CTCI1.OneWay(str1, str2));
+            Assert.assertTrue(CTCI1.OneWay(str2, str1));
+        }
+        {
+            String str1 = "pale";
+            String str2 = "bake";
+            Assert.assertFalse(CTCI1.OneWay(str1, str2));
+            Assert.assertFalse(CTCI1.OneWay(str2, str1));
         }
     }
 }
