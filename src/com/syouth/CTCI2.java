@@ -1,5 +1,6 @@
 package com.syouth;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Stack;
@@ -234,6 +235,7 @@ public class CTCI2 {
         }
         Node result = null;
         Node current = null;
+        ArrayList<Node> reverse = new ArrayList<>();
         if (l1Len > l2Len) {
             while (l1Len != l2Len) {
                 if (current == null) {
@@ -243,6 +245,7 @@ public class CTCI2 {
                     current.next = new Node(l1.data);
                     current = current.next;
                 }
+                reverse.add(current);
                 l1 = l1.next;
                 l1Len--;
             }
@@ -254,6 +257,7 @@ public class CTCI2 {
                 } else {
                     current.next = new Node(l2.data);
                 }
+                reverse.add(current);
                 l2 = l2.next;
                 l2Len--;
             }
@@ -270,16 +274,36 @@ public class CTCI2 {
                     current.next = new Node(res);
                     current = current.next;
                 }
+                reverse.add(current);
             } else {
                 if (current == null) {
                     current = new Node(1);
                     current.next = new Node(res % 10);
                     result = current;
                 } else {
-                    current.data++;
+                    int carry = 1;
+                    int i = 1;
                     current.next = new Node(res % 10);
+                    do {
+                        int val = reverse.get(reverse.size() - i).data;
+                        int sm = val + carry;
+                        reverse.get(reverse.size() - i).data = sm % 10;
+                        if (sm > 9) {
+                            carry = 1;
+                        } else {
+                            carry = 0;
+                        }
+                        i++;
+                        if (i > reverse.size() && carry == 1) {
+                            Node n = new Node(0);
+                            n.next = result;
+                            result = n;
+                            reverse.add(0, n);
+                        }
+                    } while (carry != 0);
                 }
                 current = current.next;
+                reverse.add(current);
             }
 
             l1 = l1 != null ? l1.next : null;
