@@ -13,17 +13,30 @@ public class CTCI2 {
         public Node next = null;
         public int data;
 
+        public int size() {
+            int size = 0;
+            Node next = this;
+            while (next != null) {
+                size++;
+                next = next.next;
+            }
+
+            return size;
+        }
+
         public Node(int d) {
             data = d;
         }
 
-        public void appendToTail(int d) {
+        public Node appendToTail(int d) {
             Node end = new Node(d);
             Node n = this;
             while (n.next != null) {
                 n = n.next;
             }
             n.next = end;
+
+            return end;
         }
 
         @Override
@@ -273,6 +286,50 @@ public class CTCI2 {
             l2 = l2 != null ? l2.next : null;
         }
 
+        return result;
+    }
+
+    private static int RAddll(Node l1, Node l2, Node result) {
+        if (l1 == null && l2 == null) {
+            return -1;
+        }
+
+        int carry = RAddll(l1.next, l2.next, result.appendToTail(0));
+        if (carry == -1) {
+            result.next = null;
+            carry = 0;
+        }
+        int sum = l1.data + l2.data + carry;
+        int toCarry = 0;
+        if (sum >= 10) {
+            result.data = sum % 10;
+            toCarry = 1;
+        } else {
+            result.data = sum;
+        }
+
+        return toCarry;
+    }
+
+    public static Node AddLLRecoursive(Node l1, Node l2) {
+        int l1size = l1.size();
+        int l2size = l2.size();
+        Node minList = l1size > l2size ? l2 : l1;
+        Node maxList = l1size > l2size ? l1 : l2;
+        int diff = Math.abs(l2size - l1size);
+        for (int i = 0; i < diff; i++) {
+            Node zero = new Node(0);
+            zero.next = minList;
+            minList = zero;
+        }
+
+        Node result = new Node(0);
+        int carry = RAddll(maxList, minList, result);
+        if (carry == 1) {
+            Node n = new Node(1);
+            n.next = result;
+            result = n;
+        }
         return result;
     }
 

@@ -182,6 +182,47 @@ public class CTC2Tests {
     }
 
     @Test
+    public void testLinkedListAddForwardRecursive() {
+        {
+            CTCI2.Node num1 = new CTCI2.Node(9);
+            num1.appendToTail(9);
+            num1.appendToTail(6);
+            CTCI2.Node num2 = new CTCI2.Node(6);
+            CTCI2.Node test = new CTCI2.Node(1);
+            test.appendToTail(0);
+            test.appendToTail(0);
+            test.appendToTail(2);
+            CTCI2.Node result = CTCI2.AddLLRecoursive(num1, num2);
+            Assert.assertEquals(test, result);
+        }
+        {
+            CTCI2.Node num1 = new CTCI2.Node(6);
+            num1.appendToTail(1);
+            num1.appendToTail(7);
+            CTCI2.Node num2 = new CTCI2.Node(2);
+            num2.appendToTail(9);
+            num2.appendToTail(5);
+            CTCI2.Node test = new CTCI2.Node(9);
+            test.appendToTail(1);
+            test.appendToTail(2);
+            CTCI2.Node result = CTCI2.AddLLRecoursive(num1, num2);
+            Assert.assertEquals(test, result);
+        }
+        {
+            CTCI2.Node num1 = new CTCI2.Node(6);
+            num1.appendToTail(1);
+            CTCI2.Node num2 = new CTCI2.Node(2);
+            num2.appendToTail(9);
+            num2.appendToTail(5);
+            CTCI2.Node test = new CTCI2.Node(3);
+            test.appendToTail(5);
+            test.appendToTail(6);
+            CTCI2.Node result = CTCI2.AddLLRecoursive(num1, num2);
+            Assert.assertEquals(test, result);
+        }
+    }
+
+    @Test
     public void testDetectLoopTopSort() {
         {
             CTCI2.NodeNoEq start = new CTCI2.NodeNoEq(1);
